@@ -141,6 +141,7 @@ in
 
     configFiles = [
       ./instances/standard.nix
+      ./instances/standard-runtime.nix
       ./instances/type-1/hardware.nix
     ];
 

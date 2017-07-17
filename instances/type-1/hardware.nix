@@ -14,7 +14,10 @@
       ];
     };
     kernelModules = [ "kvm-intel" ];
-    kernelParams =  [ "console=ttyS1,115200n8" ];
+    kernelParams = [
+      "console=ttyS1,115200n8"
+      "default_hugepagesz=1G" "hugepagesz=1G" "hugepages=24"
+    ];
     extraModulePackages = [ ];
   };
 
